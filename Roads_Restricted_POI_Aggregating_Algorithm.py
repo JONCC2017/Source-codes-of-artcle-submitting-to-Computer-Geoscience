@@ -5,11 +5,11 @@ from osgeo import ogr
 import sklearn
 
 error=0
-minium=7         #if the number of POI in the specifc roads formed area is little than the minium number, then the area will be skipped
-pointfile=r'E:\11111desktop\images\qingdao\jiancai2000qd.shp'  #file that saves the POI
-roadsfile=r'E:\11111desktop\images\qingdao\roadsqingdao.shp'   #file that saves the area features formed by roads
-outputfilepath=r'E:\11111desktop\images\qingdao\jiancaiqd60.shp'  #filepath for output
-EPS=60           #The EPS parameter of DBSCAN algorithm
+minium=7                                                        #If the number of POI in the specifc roads formed area is little than the minium number, then the area will be skipped
+pointfile=r'E:\11111desktop\images\qingdao\jiancai2000qd.shp'   #File that saves the POI
+roadsfile=r'E:\11111desktop\images\qingdao\roadsqingdao.shp'     #File that saves the area features formed by roads
+outputfilepath=r'E:\11111desktop\images\qingdao\jiancaiqd60.shp'   #Filepath for output
+EPS=60                                                            #The EPS parameter of DBSCAN algorithm
 
 def readshapefile(dirct):
     return shapefile.Reader(dirct)
