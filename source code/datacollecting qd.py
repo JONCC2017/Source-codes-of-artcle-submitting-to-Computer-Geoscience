@@ -85,6 +85,7 @@ for residence in range(columnid.__len__()):
     
     print('residence',residence+1," has been done")
 
+
 with open('C:/Users/Administrator/Desktop/qd/2.json','w') as file:
     json.dump(datalist,file)
 
