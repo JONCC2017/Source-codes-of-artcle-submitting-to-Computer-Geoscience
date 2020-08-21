@@ -4,6 +4,7 @@ from shapely.geometry import point
 from osgeo import ogr
 import sklearn
 
+
 error=0
 minium=7                                                        #If the number of POI in the specifc roads formed area is little than the minium number, then the area will be skipped
 pointfile=r'E:\11111desktop\images\qingdao\jiancai2000qd.shp'   #File that saves the POI
